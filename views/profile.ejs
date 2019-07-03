@@ -1,0 +1,10 @@
+<% include partials/header %>
+<p>
+ID: <%= user.profile.id %><br/>
+Username: <%= user.profile.username %><br/>
+Name: <%= user.user.role %><br/>
+<% if (user.emails) { %>
+Email: <%= user.emails[0].value %><br/>
+<% } %>
+</p>
+<% include partials/footer %>
